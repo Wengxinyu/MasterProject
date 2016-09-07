@@ -1,4 +1,5 @@
-An Analysis of Learning to Rank for Task Identification from Desktop logs
+The aim of this project is identify tasks from Desktop logs.
+
 The main languages are Java and python, there are several codes and some of them are just for testing and comparision. The main algorithm used in my work is LambdaMART, which is a state-of-the-art learning to rank algorithm. 
 
 py_learning to rank contains implementation of LambdaMART, the main reference is a python package for learning to rank algorithm called pyltr. Datasets in this part follow LETOR format.
@@ -22,3 +23,12 @@ Data description
 9. querydocument_label2.txt
 10. qdnumber2.txt: query with number, 618
 11. querydocuments_label3.csv: deleting query with just one record.
+
+Metrics
+
+NDCG (pyltr.metrics.DCG, pyltr.metrics.NDCG)
+	pow2 and identity gain functions
+ERR (pyltr.metrics.ERR)
+	pow2 and identity gain functions
+
+The usage of RankLib refers to http://people.cs.umass.edu/~vdang/ranklib.html
